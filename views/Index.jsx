@@ -7,7 +7,9 @@ export default function Index( {pokemon} ) {
             <ul>
                 {pokemon.map((pokemon,i) => 
                 <li key = {i}>
-                    {pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1).toLowerCase()}
+                    <a href = {`/pokemon/${i}`}> 
+                        {pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1).toLowerCase()}
+                    </a>
                 </li>
                 )}
             </ul>
