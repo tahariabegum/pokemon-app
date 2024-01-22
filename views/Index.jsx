@@ -13,6 +13,10 @@ export default function Index( {pokemon} ) {
                 </li>
                 )}
             </ul>
+
+            <nav>
+                <a href = '/pokemon/new'> Add New Pokemon </a>
+            </nav>
         </div>
     )
 }
